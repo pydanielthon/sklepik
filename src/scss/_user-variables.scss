@@ -1,0 +1,41 @@
+// 
+// user-variables.scss
+// Use this to override Bootstrap and Cartzilla variables
+//
+
+// Example of a variable override to change Cartzilla background color
+// Remove the "//" to comment it in and see it in action!
+// $body-bg: #12263F;
+
+$white:                 #fff !default;
+$gray-100:              #f6f9fc !default;
+$gray-200:              #f3f5f9 !default;
+$gray-300:              #e3e9ef !default;
+$gray-400:              #dae1e7 !default;
+$gray-500:              #aeb4be !default;
+$gray-600:              #7d879c !default;
+$gray-700:            	#4b566b !default;
+$gray-800:              #373f50 !default;
+$gray-900:              #2b3445 !default;
+$black:                 #000 !default;
+
+
+// Brand colors
+$primary:               #47bfa9 !default;
+$accent:                #ad1b1b !default;
+$secondary:             $gray-200 !default;
+$info:		              #23b31e !default;
+$success:               #691216 !default;
+$warning:               #3e24cf !default;
+$danger:                #3f1720 !default;
+$light:                 $white !default;
+$dark:                  $gray-800 !default;
+
+// Adding new color to default Bootstrap's $theme-colors map
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "warning": $warning
+  ),
+  $theme-colors
+);
